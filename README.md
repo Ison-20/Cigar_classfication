@@ -58,11 +58,10 @@ Due to industrial confidentiality agreements, the full FX-01 cultivar dataset (~
 To train on your own custom dataset, please organize your images in the standard PyTorch `ImageFolder` format:
 
 ```text
-data/custom_dataset/
-├── class_0/
-├── class_1/
-├── class_2/
-└── class_3/
+data/JYB
+├── JYB1/
+├── JYB2/
+└── JYB3/
 
 ```
 
@@ -101,24 +100,12 @@ bash scripts/run_cross_model.sh ./data/custom_dataset
 Our multi-module framework significantly improves the performance of orthodox CNNs while revealing the architectural incompatibility of "Patchify" stems in modern vision models.
 
 
-| Backbone Paradigm | Model | Config / Method | Accuracy | Macro-F1 | QWK |
-| ----------------- | ----- | --------------- | -------- | -------- | --- |
-| **Orthodox CNNs** |       |                 |          |          |     |
-
-
-  
-*(Preserves Mask boundary)* | **ResNet-50** | Baseline | 0.9065 | 0.9157 | 0.9543 |
-|  | **ResNet-50** | **Ours (Framework)** | **0.9439** | **0.9500** | **0.9638** |
-|  | **DenseNet-121** | Baseline | 0.9221 | 0.9332 | 0.9487 |
-|  | **DenseNet-121** | **Ours (Framework)** | **0.9439** | **0.9518** | **0.9500** |
-| **Patch/Depthwise**  
-
-
-  
-*(Fractures Mask boundary)* | **Swin-T** | Baseline | 0.9283 | 0.9364 | 0.9508 |
-|  | **Swin-T** | Ours (Framework) | 0.9252 | 0.9342 | 0.9495 |
-|  | **ConvNeXt-T** | Baseline | 0.9065 | 0.9148 | 0.9438 |
-|  | **ConvNeXt-T** | Ours (Framework) | 0.8474 | 0.8651 | 0.8933 |
+| Backbone Paradigm                          | Model          | Config / Method       | Accuracy | Macro-F1 | QWK     |
+| ------------------------------------------ | -------------- | --------------------- | -------- | -------- | ------- |
+| **Orthodox CNNs**<br>*(Preserves Mask boundary)* | ResNet-50      | Baseline              | 0.9065   | 0.9157   | 0.9543  |
+|                                            | ResNet-50      | **Ours (Framework)**  | **0.9439** | **0.9500** | **0.9638** |
+|                                            | DenseNet-121   | Baseline              | 0.9221   | 0.9332   | 0.9487  |
+|                                            | DenseNet-121   | **Ours (Framework)**  | **0.9439** | **0.9518** | **0.9500** |
 
 ## 🎓 Citation
 
@@ -126,9 +113,9 @@ If you find this code or our conceptual insights helpful for your research, plea
 
 ```bibtex
 @article{YourName2026Cigar,
-  title={[Insert Your Paper Title Here]},
-  author={[Author 1, Author 2, and Author 3]},
-  journal={[Insert Journal Name]},
+  title={[Adaptive Classification and Grading Model of Cigar wrapper leaf Based on Improved ResNet Algorithm]},
+  author={[Chaofan Du, Ruiqi Wang, and Tianyi Wu]},
+  journal={[Scientific reports]},
   year={2026},
   publisher={[Publisher]}
 }
