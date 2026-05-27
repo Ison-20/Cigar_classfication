@@ -1,0 +1,9 @@
+torch>=2.0.0
+torchvision
+timm>=0.9.0
+opencv-python
+scikit-learn
+matplotlib
+seaborn
+pandas
+tqdm
