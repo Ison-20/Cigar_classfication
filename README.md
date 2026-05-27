@@ -112,12 +112,12 @@ Our multi-module framework significantly improves the performance of orthodox CN
 If you find this code or our conceptual insights helpful for your research, please consider citing our paper:
 
 ```bibtex
-@article{YourName2026Cigar,
-  title={[Adaptive Classification and Grading Model of Cigar wrapper leaf Based on Improved ResNet Algorithm]},
-  author={[Chaofan Du, Ruiqi Wang, and Tianyi Wu]},
-  journal={[Scientific reports]},
+@article{Du2026Cigar,
+  title={Adaptive Classification and Grading Model of Cigar Wrapper Leaf Based on Improved ResNet Algorithm},
+  author={Du, Chaofan and Wang, Ruiqi and Wu, Tianyi},
+  journal={Scientific Reports},
   year={2026},
-  publisher={[Publisher]}
+  publisher={Nature Portfolio}
 }
 
 ```
