@@ -37,8 +37,7 @@ Cigar-Wrapper-Grading/
 1. Clone this repository:
 
 ```bash
-git clone [https://github.com/](https://github.com/)[YourUsername]/[YourRepository].git
-cd [YourRepository]
+git clone https://github.com/Ison-20/Cigar_classification.git.
 
 ```
 
